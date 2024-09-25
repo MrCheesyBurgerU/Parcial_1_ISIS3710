@@ -1,2 +1,2 @@
-**Nombre:** Nicolas Rozo Fajardo
-**Código:** 202112920
+* **Nombre:** Nicolas Rozo Fajardo
+* **Código:** 202112920
