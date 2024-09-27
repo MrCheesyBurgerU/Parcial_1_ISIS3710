@@ -49,7 +49,7 @@ const List = () => {
         <div className="container mt-4">
                 <div className="row">
                     <div className="col-lg-8">
-                        <table className="table table-striped" style={{width:'50vw'}}>
+                        <table className="table" style={{width:'55vw'}}>
                             <thead className="table-dark">
                                 <tr>
                                     <th>ID</th>

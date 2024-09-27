@@ -2,11 +2,12 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import RobotImage from './images/banner.png';
 import { Image, Container, Row, Col } from 'react-bootstrap';
+import { FormattedMessage } from 'react-intl';
 
 function Banner() {
     return (
         <Container className='text-center' style={{marginTop:'3vh'}}>
-            <h1>Adopta un Robot con Robot Lovers!</h1>
+            <h1><strong><FormattedMessage id="titulo"/></strong></h1>
             <Row className='align-items-center'>
                 <Col>
                     <hr 
