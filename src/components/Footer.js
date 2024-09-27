@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 
 function Footer({ message }) {
     return (
-        <footer style={{marginTop:'50px'}}>
+        <footer style={{position:'fiexd'}}>
             <Container>
                 <p className="text-center">{message}</p>
             </Container>

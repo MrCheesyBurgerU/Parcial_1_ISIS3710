@@ -22,13 +22,13 @@ function Detail({ robot }){
                 border: '3px solid black'  
             }} 
             />
-            <p className="card-text" style={{ textAlign: 'left' }}>
+            <p className="card-text" style={{ textAlign: 'left', marginBottom: '0' }}>
                 <strong><FormattedMessage id="anio"/></strong> {robot.añoFabricacion}
             </p>
-            <p className="card-text" style={{ textAlign: 'left' }}>
-            <strong><FormattedMessage id="procesamiento"/></strong> {robot.capacidadProcesamiento} GHz
-                </p>
-            <p className="card-text" style={{ textAlign: 'left' }}>
+            <p className="card-text" style={{ textAlign: 'left', marginBottom: '0' }}>
+                <strong><FormattedMessage id="procesamiento"/></strong> {robot.capacidadProcesamiento} GHz
+            </p>
+            <p className="card-text" style={{ textAlign: 'left', marginBottom: '0' }}>
                 <strong><FormattedMessage id="humor"/></strong> {robot.humor}
             </p>
         </div>

@@ -32,14 +32,13 @@ function Forms() {
                     password: password,
                 }),
             });
-            const data = await response.json();
             if (response.status === 200) {
                 setError(false);
                 navigate('/list');        
             } 
             else if (response.status === 401) {
                 setError(true);
-                setErrorMessage(data.message);
+                setErrorMessage('Error de autenticación. Revise sus credenciales');
             }
         } 
         catch (err) {
@@ -79,11 +78,11 @@ function Forms() {
                     )}
                     <Row>
                         <Col className="d-flex justify-content-between">
-                            <Button variant="primary" type="submit" style={{ width: '45%' }}>
-                                Ingresar
+                            <Button variant="primary" type="submit" style={{ width: '45%',  borderRadius:'0' }}>
+                                <strong>Ingresar</strong>
                             </Button>
-                            <Button variant="danger" type="button" style={{ width: '45%' }} onClick={restart}>
-                                Cancelar
+                            <Button variant="danger" type="button" style={{ width: '45%', color:'#000000', borderRadius:'0' }} onClick={restart}>
+                                <strong>Cancelar</strong>
                             </Button>
                         </Col>
                     </Row>
