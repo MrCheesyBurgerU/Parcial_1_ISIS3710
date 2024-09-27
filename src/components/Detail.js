@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FormattedMessage } from 'react-intl';
 
+
 function Detail({ robot }){
   if (!robot) return null;
 
