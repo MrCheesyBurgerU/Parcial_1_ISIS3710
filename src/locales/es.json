@@ -1,5 +1,8 @@
 {
     "nombre": "Nombre",
     "modelo": "Modelo",
-    "empresaFabricante": "Empresa Fabricante"
+    "empresaFabricante": "Empresa Fabricante",
+    "anio":"→ Año de Fabricación",
+    "procesamiento":"→ Capacidad de Procesamiento",
+    "humor":"→ Humor"
 }

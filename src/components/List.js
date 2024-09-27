@@ -86,9 +86,9 @@ const List = () => {
                                         border: '3px solid black'  
                                     }} 
                                     />
-                                    <p className="card-text" style={{ textAlign: 'left' }}><strong>→ Año de Fabricación:</strong> {selectedRobot.añoFabricacion}</p>
-                                    <p className="card-text" style={{ textAlign: 'left' }}><strong>→ Capacidad de Procesamiento:</strong> {selectedRobot.capacidadProcesamiento} GHz</p>
-                                    <p className="card-text" style={{ textAlign: 'left' }}><strong>→ Humor:</strong> {selectedRobot.humor}</p>
+                                    <p className="card-text" style={{ textAlign: 'left' }}><strong><FormattedMessage id="anio"/></strong> {selectedRobot.añoFabricacion}</p>
+                                    <p className="card-text" style={{ textAlign: 'left' }}><strong><FormattedMessage id="procesamiento"/></strong> {selectedRobot.capacidadProcesamiento} GHz</p>
+                                    <p className="card-text" style={{ textAlign: 'left' }}><strong><FormattedMessage id="humor"/></strong> {selectedRobot.humor}</p>
                                 </div>
                             </div>
                         )}

@@ -1,5 +1,8 @@
 {
     "nombre": "Name",
     "modelo": "Model",
-    "empresaFabricante": "Manufacturing Company"
+    "empresaFabricante": "Manufacturing Company",
+    "anio":"→ Manufacturing Year",
+    "procesamiento":"→ Processing Capacity",
+    "humor":"→ Humor"
 }
