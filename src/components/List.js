@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FormattedMessage } from 'react-intl';
+import Detail from './Detail';
 
 const List = () => {
 
@@ -70,28 +71,7 @@ const List = () => {
                         </table>
                     </div>
                     <div className="col-lg-4">
-                        {selectedRobot && (
-                            <div className="card text-center" style={{ border: '3px solid black', padding: '10px', borderRadius: '8px', backgroundColor: '#f9f9f9'}}>
-                                <div className="card-body">
-                                    <h5 className="card-title" style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>{selectedRobot.nombre}</h5>
-                                    <img 
-                                    src={selectedRobot.imagen} 
-                                    className="card-img-top mx-auto" 
-                                    alt={selectedRobot.nombre} 
-                                    style={{ 
-                                        width: '130px', 
-                                        height: '130px', 
-                                        objectFit: 'cover', 
-                                        marginBottom:'1vh', 
-                                        border: '3px solid black'  
-                                    }} 
-                                    />
-                                    <p className="card-text" style={{ textAlign: 'left' }}><strong><FormattedMessage id="anio"/></strong> {selectedRobot.añoFabricacion}</p>
-                                    <p className="card-text" style={{ textAlign: 'left' }}><strong><FormattedMessage id="procesamiento"/></strong> {selectedRobot.capacidadProcesamiento} GHz</p>
-                                    <p className="card-text" style={{ textAlign: 'left' }}><strong><FormattedMessage id="humor"/></strong> {selectedRobot.humor}</p>
-                                </div>
-                            </div>
-                        )}
+                        <Detail robot={selectedRobot}/>
                     </div>
                 </div>
         </div>
