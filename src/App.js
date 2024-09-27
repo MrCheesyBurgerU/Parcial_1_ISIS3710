@@ -9,8 +9,8 @@ function App() {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<div><Banner/><Forms/><Footer/></div>} />
-                <Route path="/list" element={<div><Banner/><List/></div>} />
+                <Route path="/" element={<div><Banner/><Forms/><Footer message = {'Contact us: +57 3102105253 - info@robot-lovers.com - @robot-lovers'}/></div>} />
+                <Route path="/list" element={<div><Banner/><List/><Footer message = {'Contact us: +57 3102105253 - info@robot-lovers.com - @robot-lovers'}/></div>} />
             </Routes>
         </Router>
     );
