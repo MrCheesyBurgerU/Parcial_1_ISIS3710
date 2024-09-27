@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { FormattedMessage } from 'react-intl';
 
 const List = () => {
 
@@ -51,9 +52,9 @@ const List = () => {
                             <thead className="table-dark">
                                 <tr>
                                     <th>ID</th>
-                                    <th>Nombre</th>
-                                    <th>Modelo</th>
-                                    <th>Empresa Fabricante</th>
+                                    <th><FormattedMessage id="nombre"/></th>
+                                    <th><FormattedMessage id="modelo"/></th>
+                                    <th><FormattedMessage id="empresaFabricante"/></th>
                                 </tr>
                             </thead>
                             <tbody>
